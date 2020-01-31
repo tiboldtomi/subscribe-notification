@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/subscribe-notification/static/js/main.aa85543a.chunk.js",
-    "main.js.map": "/subscribe-notification/static/js/main.aa85543a.chunk.js.map",
+    "main.js": "/subscribe-notification/static/js/main.9639d96b.chunk.js",
+    "main.js.map": "/subscribe-notification/static/js/main.9639d96b.chunk.js.map",
     "runtime-main.js": "/subscribe-notification/static/js/runtime-main.7f48002f.js",
     "runtime-main.js.map": "/subscribe-notification/static/js/runtime-main.7f48002f.js.map",
     "static/css/2.47e06e2e.chunk.css": "/subscribe-notification/static/css/2.47e06e2e.chunk.css",
     "static/js/2.8c14ce10.chunk.js": "/subscribe-notification/static/js/2.8c14ce10.chunk.js",
     "static/js/2.8c14ce10.chunk.js.map": "/subscribe-notification/static/js/2.8c14ce10.chunk.js.map",
     "index.html": "/subscribe-notification/index.html",
-    "precache-manifest.dcf52fa8878d62056c345f2696ad14d0.js": "/subscribe-notification/precache-manifest.dcf52fa8878d62056c345f2696ad14d0.js",
+    "precache-manifest.be8bc843e0e24cb76def604ea860f7ab.js": "/subscribe-notification/precache-manifest.be8bc843e0e24cb76def604ea860f7ab.js",
     "service-worker.js": "/subscribe-notification/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/subscribe-notification/static/css/2.47e06e2e.chunk.css.map",
     "static/js/2.8c14ce10.chunk.js.LICENSE": "/subscribe-notification/static/js/2.8c14ce10.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7f48002f.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.8c14ce10.chunk.js",
-    "static/js/main.aa85543a.chunk.js"
+    "static/js/main.9639d96b.chunk.js"
   ]
 }
