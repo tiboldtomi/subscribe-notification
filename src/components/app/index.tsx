@@ -10,7 +10,7 @@ interface IAppProps { }
 
 const formValidationSchema = yup.object().shape({
     email: yup.string()
-        .email('Az email cím nem valid!')
+        .email('Az email cím formátuma nem megfelelő!')
         .required('Email cím megadása kötelező!')
 });
 
