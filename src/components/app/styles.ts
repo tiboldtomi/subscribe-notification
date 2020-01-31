@@ -22,6 +22,7 @@ export const H1 = styled.h1({
 export const Jumbotron = styled.section({
     padding: '2rem 2.5rem',
     borderRadius: '.25rem',
+    margin: '0 1.5rem',
     backgroundColor: '#fff',
     boxShadow: '0 0 10px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,.2)',
 });

@@ -1,6 +1,6 @@
 {
   "name": "subscribe-notifications",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "http://tiboldtomi.github.io/subscribe-notification",
   "private": true,
   "dependencies": {

@@ -20,7 +20,8 @@ interface IFormValues {
 
 const App: React.FC<IAppProps> = () => {
 
-    const [notificatedEmail, setNotificatedEmail] = React.useState<string | null>(null);
+    const [notificatedEmail, setNotificatedEmail] = React.useState<string>('');
+    const [showNotification, setShowNotification] = React.useState<boolean>(false);
 
     const formik = useFormik<IFormValues>({
         initialValues: {
@@ -28,16 +29,15 @@ const App: React.FC<IAppProps> = () => {
         },
         onSubmit: ({ email }) => {
             setNotificatedEmail(email);
+            setShowNotification(true)
             formik.setValues({ email: '' }, false);
             formik.setTouched({}, false);
-            setTimeout(() => setNotificatedEmail(null), 4500);
+            setTimeout(() => setShowNotification(false), 6000);
         },
         validationSchema: formValidationSchema,
-        validateOnChange: true,
-        validateOnBlur: false,
     });
 
-    const notificationTransitions = useTransition(!!notificatedEmail, null, {
+    const notificationTransitions = useTransition(showNotification, null, {
         from: { transform: 'translate3d(0,-200px,0)', opacity: '0' },
         enter: { transform: 'translate3d(0,0px,0)', opacity: '1' },
         leave: { transform: 'translate3d(0,-200px,0)', opacity: '0' }
@@ -57,9 +57,9 @@ const App: React.FC<IAppProps> = () => {
                         <Form.Control
                             type={'text'}
                             name={'email'}
+                            placeholder={'Email cím'}
                             value={formik.values.email}
                             onChange={formik.handleChange}
-                            placeholder={'Adja meg email címét'}
                             isValid={!!(formik.touched.email && !formik.errors.email)}
                             isInvalid={!!(formik.touched.email && !!formik.errors.email)}
                         />
